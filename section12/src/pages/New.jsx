@@ -20,7 +20,7 @@ const New = () =>{
     };
     return (
         <div>
-            <Header title={"일기쓰기 젠킨스 테스트"}
+            <Header title={"일기쓰기"}
                 leftChild={<Button
                     onClick={()=>nav(-1)} 
                     text={"< 뒤로 가기"}/>}

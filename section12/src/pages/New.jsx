@@ -8,7 +8,7 @@ import usePageTitle from "../hooks/usePageTitle";
 const New = () =>{
     const {onCreate} = useContext(DiaryDispatchContext);
     const nav = useNavigate();
-    usePageTitle("새 일기 쓰기 젠킨스 테스트");
+    usePageTitle("새 일기 쓰기");
     const onSubmit = (input) =>{
         onCreate(
             input.createdDate.getTime(),
@@ -20,7 +20,7 @@ const New = () =>{
     };
     return (
         <div>
-            <Header title={"일기쓰기"}
+            <Header title={"일기쓰기 젠킨스 테스트"}
                 leftChild={<Button
                     onClick={()=>nav(-1)} 
                     text={"< 뒤로 가기"}/>}

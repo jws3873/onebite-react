@@ -27,7 +27,7 @@ const getMonthlyData = (pivotDate, data)=>{
 const Home = () =>{
     const data = useContext(DiaryStateContext);
     const [pivotDate,setPivoDate] = useState(new Date());
-    usePageTitle("감정 일기장test");
+    usePageTitle("감정 일기장");
     const monthlyData = getMonthlyData(pivotDate,data);
     
     const onIncreaseMonth = ()=>{
